@@ -1,0 +1,229 @@
+@media screen and (max-width:480px){
+
+    .history_title_style{
+        /* display: flex; */
+        /* margin-top: 40%; */
+        width: 100%;
+        font-size: 20px;
+        text-shadow: -5px 0px 5px black;
+        z-index: 1;
+        position: relative;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+    }
+
+    div.text{
+        justify-content: center;
+        /* text-align: center; */
+        /* align-items: center; */
+    }
+
+    #container {
+        top: 0;
+        position:relative;
+        width: 100vw;
+        height: 100%;
+        overflow: hidden;
+    }
+
+    .text { 
+        font-family:'Karla';
+        font-size: 20px;
+        /* position: relative; */
+        /* align-items: center; */
+        
+        display: block;
+        width: 89%;
+        padding: 20px;
+        background-color: #444;
+        border-radius: 10px;
+        margin-left: 0;
+        text-shadow: -5px 0px 5px black;
+    }
+
+    
+    .container {
+        width: 100%;
+        margin: auto;
+        padding: 0;
+    }
+
+    .img-banner {
+        /* position: absolute; */
+        z-index: 1;
+        max-width: 100%;
+        height: auto;
+    }
+
+    .img_squad{
+        z-index: 1;
+        width: auto;
+        height: 100%;
+    }
+    
+
+    .img-container {
+        display: flex;
+        justify-content: center; /* Центрируем по горизонтали */
+        width: 100vw;            /* Ширина контейнера 100% от ширины экрана */
+        height: 100vh;           /* Высота контейнера 100% от высоты экрана */
+        overflow: hidden;        /* Скрываем части изображения, выходящие за пределы контейнера */
+    }
+
+
+    .link{
+        width: 100%;
+        font-size: 50px;
+        /* top: 50%; */
+        margin-top: 10%;
+        font-family: 'Inter';
+        position: absolute;
+
+        text-shadow: -2px 0px 2px red;
+    }
+
+    .center-container {
+        width: 100%;
+        /* display: flex; */
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        z-index: 1;
+        margin-right: 0;
+    }
+
+
+    .messageLeft, .messageRight, .message-left-car {
+        font-family:'Karla';
+        position: absolute;
+        width: 15%;
+        color: black;
+        font-size: 16px;
+        display: flex; /* Убедитесь, что элементы внутри выравниваются по центру */
+        align-items: center;
+        height: 100px; /* Фиксированная высота для поддержания формы фона */
+        padding-right: 20px;
+        align-items: center;
+        box-sizing: border-box; /* Включает padding в расчёт ширины элемента */
+        overflow: hidden; /* Обрезает текст, который не помещается в заданную ширину */
+    }
+
+    .message-left-car{
+        margin-left: 0;
+        text-align: center;
+        justify-content: right;
+        /* padding-right: 50px; */
+    }
+
+    .messageLeft{
+        margin-left: 0;
+        padding-left: 40%;
+        width: 100%;
+    }
+
+    .yeap-move{
+        padding-left: 55%;
+    }
+
+    .messageRight{
+        margin-left: 0;
+        padding-right: 0;
+        width: 100%;
+    }
+
+    .car_block img{
+        width: 80%;
+        height: 80%;
+    }
+
+    .car_message{
+        font-family:'Karla';
+        position: absolute;
+        width: 100%;
+        color: black;
+        font-size: 10px;
+        display: flex; /* Убедитесь, что элементы внутри выравниваются по центру */
+        align-items: center;
+        /* height: 100px; Фиксированная высота для поддержания формы фона */
+        /* padding-right: 0; */
+        padding-left: 5px;
+        /* align-items: center; */
+    
+        box-sizing: border-box; 
+        overflow: hidden;
+    }
+
+    .icon-list img {
+        width: 60px; /* Задаем фиксированную ширину изображения */
+        height: 60px; /* Задаем фиксированную высоту изображения */
+        object-fit: cover;
+        border-radius: 50%;
+        word-break: break-all;
+        /* Обеспечиваем сохранение пропорций изображения */
+    }
+
+
+    .content {
+        display:block;
+        justify-content: space-between;
+        /* align-items: flex-start; */
+        z-index: 1;
+    
+        position: relative;
+    }
+
+    .car_block{
+        position: absolute; 
+        margin-left: 35%;
+        padding-left: 15%; 
+        margin-top: 0;
+        justify-content: right;
+    }
+    .move{
+        margin-left: 0;
+    }
+
+
+    .chat-box {
+        /* background-color: #3a3a3a; */
+        border-radius: 10px;
+        padding: 0;
+        margin: 10px 0;
+        width: 100%;
+        height: auto;
+        display: flex;
+        align-items: center;
+        z-index: 1;
+    
+    }
+
+    .character {
+        position: relative;
+        height: auto;
+        width: 100%;
+        text-align: center;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    
+
+    .chat-box img {
+        width: 60%; 
+        height: 60%;
+        /* margin-right: 10px; */
+    }
+
+    .car_block img{
+        width: 40%;
+        height: 40%;
+    }
+
+
+    .elem-link-ca{
+        font-size: 30px;
+        word-break: break-all;
+        margin-left: 3%;
+    }
+}

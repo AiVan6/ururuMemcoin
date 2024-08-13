@@ -1,0 +1,545 @@
+@font-face {
+    font-family: "Karla"; 
+    src: url("../fonts/Karla.ttf") format("truetype"); 
+    font-style: normal; 
+    font-weight: normal; 
+}
+
+@font-face {
+    font-family: "Inter"; 
+    src: url("../fonts/InterTight-Bold.ttf") format("truetype"); 
+    font-style: normal; 
+    font-weight: normal; 
+}
+
+body, html {
+    background-color: #2A2F33;
+    color: white;
+    padding: 0;
+    margin: 0;
+    overflow-x: hidden; /* Убираем возможность скролла */
+
+}
+
+/* .user-size{
+    width: 100%;
+    height: 100%;
+} */
+
+
+img {
+    display: block;
+    margin: 0;
+    padding: 0;
+    border: none;
+}
+
+.background_page{
+    background: #2A2F33;
+    background-color: #2A2F33;
+}
+
+.container {
+    width: 100%;
+    margin: auto;
+    padding: 20px;
+}
+
+.container-icon {
+    width: 100%;
+    margin: auto;
+}
+
+h1 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.content {
+    display: flex;
+    justify-content: space-between;
+    /* align-items: flex-start; */
+    z-index: 1;
+
+    position: relative;
+}
+
+.coins {
+    position: abssolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    pointer-events: none;
+    /* overflow: hidden; Убираем возможность скролла */
+   
+}
+
+#container {
+    top: 0;
+    position:relative;
+    width: 100%;
+    height: 100%;
+}
+
+.coin {
+    position: absolute;
+    width: 200px;
+}
+
+/* #coin1 {
+    top: 10%;
+    left: 5%;
+}
+
+#coin2 {
+    top: 120%;
+    right: 10%;
+}
+
+#coin3 {
+    top: 150%;
+    left: 15%;
+}
+
+#coin4 {
+    top: 100%;
+    right: 5%;
+}
+
+#coin5 {
+    top: 185%;
+    left: 30%;
+}
+
+#coin6 {
+    top: 90%;
+    right: 25%;
+}
+
+#coin7 {
+    top: 140%;
+    left: 45%;
+}
+
+#coin8 {
+    top: 100%;
+    left: 0%;
+} */
+
+
+.text {
+    font-family:'Karla';
+    font-size: 28px;
+    position: relative;
+    width: 60%;
+    padding: 20px;
+    background-color: #444;
+    border-radius: 10px;
+    margin-left: 5%;
+    text-shadow: -5px 0px 5px black;
+}
+
+.character {
+    position: relative;
+    height: auto;
+    width: 50%;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.character img {
+    max-width: 100%;
+    height: auto;
+}
+
+.history_title_style{
+    font-size: 32px;
+    text-shadow: -5px 0px 5px black;
+    z-index: 1;
+    position: relative;
+}
+
+.yeap-move{
+    padding-left: 100px;
+}
+
+.bought_move{
+    padding-left: 50px;
+}
+
+
+.chat-box {
+    /* background-color: #3a3a3a; */
+    border-radius: 10px;
+    padding: 15px;
+    margin: 10px 0;
+    width: 400px;
+    height: auto;
+    display: flex;
+    align-items: center;
+    z-index: 1;
+
+}
+.chat-box img {
+    /* width: 40px; */
+    /* height: 40px; */
+    margin-right: 10px;
+    /* margin-left: 10px; */
+}
+
+.center-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    z-index: 1;
+    margin-right: 20%;
+}
+
+.center-container img {
+    align-items: center;
+}
+
+
+
+.messageLeft, .messageRight, .message-left-car {
+    font-family:'Karla';
+    position: absolute;
+    width: 15%;
+    color: black;
+    font-size: 25px;
+    display: flex; /* Убедитесь, что элементы внутри выравниваются по центру */
+    align-items: center;
+    height: 100px; /* Фиксированная высота для поддержания формы фона */
+    padding-right: 20px;
+    align-items: center;
+    box-sizing: border-box; /* Включает padding в расчёт ширины элемента */
+    overflow: hidden; /* Обрезает текст, который не помещается в заданную ширину */
+}
+
+.messageLeft,.message-left-car{
+    margin-left: 14%;
+}
+
+.messageRight{
+    margin-left: 5%;
+}
+
+.img_squad{
+    z-index: 1;
+    width: 100%;
+    height: auto;
+}
+
+.img_par{
+    /* position: absolute;  */
+    z-index: 1;
+    width: 100%;
+    height: auto;
+}
+
+.car_message{
+    font-family:'Karla';
+    /* position: absolute; */
+    width: 100%;
+    color: black;
+    font-size: 25px;
+    display: flex; /* Убедитесь, что элементы внутри выравниваются по центру */
+    align-items: center;
+    height: 100px; /* Фиксированная высота для поддержания формы фона */
+    padding-left: 30px;
+    align-items: center;
+    box-sizing: border-box; /* Включает padding в расчёт ширины элемента */
+    overflow: hidden;
+}
+
+.car_block{
+    position: absolute; 
+    margin-left: 60%; 
+    margin-top: 10%;
+}
+
+.link{
+    width: 100%;
+    font-size: 80px;
+    /* top: 50%; */
+    margin-top: 10%;
+    font-family: 'Inter';
+    position: absolute;
+    text-align: center;
+    justify-content: center;
+    text-decoration: none;
+    text-shadow: -5px 0px 3px red;
+    z-index: 1;
+}
+
+.indentation{
+    text-align: center;
+}
+
+.icon-list {
+    list-style-type: none; /* Убираем маркеры списка */
+    padding: 0;
+    margin: 0;
+    display: flex; /* Используем Flexbox для выравнивания в ряд */
+    justify-content: center; /* Центрируем содержимое */
+    flex-wrap: wrap; /* Позволяем перенос на следующую строку, если элементы не помещаются */
+}
+
+.icon-list li {
+    margin: 10px;
+}
+
+.icon-list img {
+    width: 100px; /* Задаем фиксированную ширину изображения */
+    height: 100px; /* Задаем фиксированную высоту изображения */
+    object-fit: cover;
+    border-radius: 50%;
+    /* Обеспечиваем сохранение пропорций изображения */
+}
+
+.notification {
+    position: absolute;
+    z-index: 10;
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background-color: #333;
+    color: white;
+    padding: 15px;
+    border-radius: 5px;
+    opacity: 0;
+    transition: opacity 0.5s ease;
+}
+.notification.show {
+    opacity: 1;
+}
+
+.elem-link{
+    color: #6900bf;
+    text-decoration: none;
+}
+
+.elem-link-ca{
+    cursor: pointer;
+    font-size: 50px;
+}
+
+/* .messageRight{
+    background: url(../img/messageRight.png) no-repeat center;
+    background-size: contain; /* Обеспечивает, что фон масштабируется и помещается целиком */
+
+.background {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+.background img {
+    margin: 10px;
+    width: 60px;
+    height: 60px;
+    opacity: 0.8;
+}
+
+
+
+@media all and (min-width: 961px) and (max-width:1200px){
+
+
+    .link{
+        width: 100%;
+        font-size: 50px;
+        /* top: 50%; */
+        margin-top: 10%;
+        font-family: 'Inter';
+        position: absolute;
+        text-align: center;
+        justify-content: center;
+        text-decoration: none;
+        text-shadow: -5px 0px 2px red;
+    }
+
+    .elem-link-ca{
+        font-size: 35px;
+    }
+
+
+    .message-left-car{
+        font-family:'Karla';
+        position: absolute;
+        width: 15%;
+        color: black;
+        font-size: 25px;
+        display: flex; /* Убедитесь, что элементы внутри выравниваются по центру */
+        align-items: center;
+        height: 100px; /* Фиксированная высота для поддержания формы фона */
+        /* padding-right: 20px; */
+        align-items: center;
+        box-sizing: border-box; /* Включает padding в расчёт ширины элемента */
+        overflow: hidden; /* Обрезает текст, который не помещается в заданную ширину */
+    }
+    
+    .message-left-car{
+        margin-left: 0;
+        /* padding-right: 50px; */
+    }
+
+    .messageLeft{
+        margin-left: 24%;
+        width: 100%;
+    }
+
+    .messageRight{
+        margin-left: 8%;
+        width: 100%;
+    }
+
+    .car_block img{
+        width: 90%;
+        height: 90%;
+    }
+
+    .car_message{
+        font-family:'Karla';
+        position: absolute;
+        width: 100%;
+        color: black;
+        font-size: 25px;
+        display: flex; /* Убедитесь, что элементы внутри выравниваются по центру */
+        align-items: center;
+        /* height: 100px; Фиксированная высота для поддержания формы фона */
+        /* padding-right: 100px; */
+        /* align-items: center; */
+        box-sizing: border-box; 
+        overflow: hidden;
+    }
+
+    .car_block{
+        position: absolute; 
+        margin-left: 60%; 
+        margin-top: 7%;
+    }
+
+}
+
+
+@media screen and (max-width:960px){
+
+    .link{
+        width: 100%;
+        font-size: 40px;
+        /* top: 50%; */
+        margin-top: 10%;
+        font-family: 'Inter';
+        position: absolute;
+        text-align: center;
+        justify-content: center;
+        text-decoration: none;
+        text-shadow: -5px 0px 2px red;
+    }
+
+    .elem-link-ca{
+        font-size: 30px;
+    }
+
+    .message-left-car{
+        font-family:'Karla';
+        position: absolute;
+        width: 15%;
+        color: black;
+        font-size: 25px;
+        display: flex; /* Убедитесь, что элементы внутри выравниваются по центру */
+        align-items: center;
+        height: 100px; /* Фиксированная высота для поддержания формы фона */
+        /* padding-right: 20px; */
+        align-items: center;
+        box-sizing: border-box; /* Включает padding в расчёт ширины элемента */
+        overflow: hidden; /* Обрезает текст, который не помещается в заданную ширину */
+    }
+    
+    .message-left-car{
+        margin-left: 0;
+        /* padding-right: 50px; */
+    }
+
+    .messageLeft{
+        margin-left: 24%;
+        width: 100%;
+    }
+
+    .messageRight{
+        margin-left: 8%;
+        width: 100%;
+    }
+
+    .car_block img{
+        width: 80%;
+        height: 80%;
+    }
+
+    .car_message{
+        font-family:'Karla';
+        position: absolute;
+        width: 100%;
+        color: black;
+        font-size: 20px;
+        display: flex; /* Убедитесь, что элементы внутри выравниваются по центру */
+        align-items: center;
+        /* height: 100px; Фиксированная высота для поддержания формы фона */
+        /* padding-right: 100px; */
+        /* align-items: center; */
+        box-sizing: border-box; 
+        overflow: hidden;
+    }
+
+    .icon-list img {
+        width: 60px; /* Задаем фиксированную ширину изображения */
+        height: 60px; /* Задаем фиксированную высоту изображения */
+        object-fit: cover;
+        border-radius: 50%;
+        /* Обеспечиваем сохранение пропорций изображения */
+    }
+
+    .car_block{
+        position: absolute; 
+        margin-left: 60%; 
+        margin-top: 7%;
+    }
+
+    .content {
+        display:block;
+        justify-content: space-between;
+        /* align-items: flex-start; */
+        z-index: 1;
+    
+        position: relative;
+    }
+
+    .text {
+        font-family:'Karla';
+        font-size: 28px;
+        position: relative;
+        width: 90%;
+        padding: 20px;
+        background-color: #444;
+        border-radius: 10px;
+        margin-right: 20px;
+        margin-left: 0;
+        text-shadow: -5px 0px 5px black;
+    }
+
+    .character {
+        position: relative;
+        height: auto;
+        width: 100%;
+        text-align: center;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+}
